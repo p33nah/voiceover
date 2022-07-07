@@ -10,9 +10,9 @@ close.onclick = () => {
   menu.style.display = "none";
 };
 
-document.addEventListener("focus", (e) => {
-  console.log("focus");
-  if (menu.style.display === "block" && !menu.contains(e.target)) {
-    console.log("focus out");
-  }
+window.addEventListener("focusin", (e) => {
+  console.log(e.target);
+  // if (menu.style.display === "block" && !menu.contains(e.target)) {
+  //   console.log("focus out");
+  // }
 });
